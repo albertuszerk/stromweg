@@ -1,1 +1,22 @@
+[Unit]
+# Eine kurze Beschreibung, was dieser Dienst macht
+Description=stromweg - Laptop Power Monitor (v1.0)
+# Der Dienst soll erst starten, wenn das System bereit ist
+After=network.target
 
+[Service]
+# Der Befehl, um das Skript zu starten. 
+# WICHTIG: Ersetze 'DEIN_BENUTZERNAME' durch deinen echten Namen (z.B. albertuszerk)!
+ExecStart=/usr/bin/python3 /home/DEIN_BENUTZERNAME/.local/bin/listener.py
+
+# Falls das Skript abstuerzt, soll es automatisch neu gestartet werden
+Restart=always
+RestartSec=5
+
+# Der Dienst laeuft als 'root', damit er den Computer ausschalten darf
+User=root
+Group=root
+
+[Install]
+# Dies sorgt dafuer, dass der Dienst beim Hochfahren geladen wird
+WantedBy=multi-user.target
