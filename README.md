@@ -1,4 +1,8 @@
-# ⚡ stromweg - Technik als Rueckhalt: Ein Sicherheitsnetz fuer die Familie (v1.0)
+<p align="center">
+  <img src="images/shutdown7.jpg" alt="X-Strom-Weg - ..das nur noch 5 Minuten Dilemma" width="100%">
+</p>
+
+# ⚡ X-Strom-Weg v1.0 - Technik als Rueckhalt: Ein Sicherheitsnetz fuer die Familie
 
 ![Status](https://img.shields.io/badge/Version-1.0--Final-orange)
 ![Platform](https://img.shields.io/badge/OS-Zorin%20OS-blue)
@@ -33,7 +37,7 @@ Hier findest du alle visuellen Details zum Nachbauen:
 
 | | | |
 | :---: | :---: | :---: |
-| ![Schaltplan](images/shutdown1-schema-verdrahtung.jpg) <br> **Schaltplan v1.0** | ![Das nur noch 5 Minuten Dilemma](images/shutdown7.jpg) <br> **Das nur noch 5 Minuten Dilemma** | ![Die Konsequenz-Schaltung](images/shutdown8.jpg) <br> **Die Konsequenz-Schaltung** |
+| ![Schaltplan](images/shutdown1-schema-verdrahtung.jpg) <br> **Schaltplan v1.0** | ![Analoge Wärme im digitalen Schatten – Rückzug zum Wesentlichen](images/shutdown2.jpg) <br> **Analoge Wärme im digitalen Schatten – Rückzug zum Wesentlichen** | ![Die Konsequenz-Schaltung](images/shutdown8.jpg) <br> **Die Konsequenz-Schaltung** |
 | ![Streit um Screentime](images/shutdown3.jpg) <br> **Streit um Screentime** | ![Endstation Safe: Platz für Schach, Karten und wahre Momente](images/shutdown5.jpg) <br> **Endstation Safe: Platz für Schach, Karten und wahre Momente** | ![Natur statt Bits](images/shutdown6.jpg) <br> **Natur statt Bits** |
 
 ---
@@ -188,7 +192,7 @@ Stell dir vor, dein Laptop ist ein riesiges, gemütliches **Haus namens Zorin**.
 
 ### 🔍 Die magischen Worte im Detail
 
-| Begriff | Bedeutung | Der "Chef-Faktor" |
+| 🧩 Begriff | 📖 Bedeutung | 👑 Der "Chef-Faktor" |
 | :--- | :--- | :--- |
 | `sudo` | Der magische Ausweis | "Ich darf das, ich bin der Chef!" |
 | `shutdown -h` | Die Abschliess-Aktion | "Haus abschliessen!" |
@@ -196,16 +200,17 @@ Stell dir vor, dein Laptop ist ein riesiges, gemütliches **Haus namens Zorin**.
 
 ---
 
-### Zusammenfassung
+### 📋 Zusammenfassung
 
-| **Code** | **Bedeutung** |
-| --- | --- |
-| Serial.println | "Ich rufe eine Nachricht in die Leitung!" |
-| SHUTDOWN_NOW | Das geheime Codewort. |
-| os.system | Der Chef-Befehl an den Computer. |
-| sudo shutdown | "Alle Fenster zu, Lichter aus, wir gehen schlafen!" |
+| 🧩 Code | 📖 Bedeutung |
+| :--- | :--- |
+| `Serial.println` | "Ich rufe eine Nachricht in die Leitung!" |
+| `SHUTDOWN_NOW` | Das geheime Codewort. |
+| `os.system` | Der Chef-Befehl an den Computer. |
+| `sudo shutdown` | "Alle Fenster zu, Lichter aus, wir gehen schlafen!" |
 
 ---
+
 **Lizenz:** CC BY-NC-SA 4.0
 
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
