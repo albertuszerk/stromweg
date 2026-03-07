@@ -203,3 +203,7 @@ Jetzt kommt der Moment mit `os.system("sudo shutdown -h now")`. Das ist für den
 **Lizenz:** Dieses Werk ist lizenziert unter einer [Creative Commons Namensnennung 4.0 International Lizenz (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.de).
 Erstellt von Albertus Zerk in Zusammenarbeit mit Gemini. *Version 1.0 (Final) | Maerz 2026.*
 
+<a href="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png">
+  <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="50">
+</a>
+
