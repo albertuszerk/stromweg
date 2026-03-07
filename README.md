@@ -4,8 +4,15 @@
 
 # ⚡ X-Strom-Weg v1.0 - Technik als Rueckhalt: Ein Sicherheitsnetz fuer die Familie
 
-![Status](https://img.shields.io/badge/Version-1.0--Final-orange)
-![Platform](https://img.shields.io/badge/OS-Zorin%20OS-blue)
+![Version](https://img.shields.io/badge/Version-1.0--Final-orange)
+![OS](https://img.shields.io/badge/OS-Zorin%20OS-blue)
+![Hardware](https://img.shields.io/badge/Hardware-ESP32-green)
+![Sprache](https://img.shields.io/badge/Sprache-Python%203.x-ffd343)
+![Lizenz](https://img.shields.io/badge/Lizenz-CC%20BY--NC--SA-lightgrey)
+![Vibe](https://img.shields.io/badge/Vibe-Analog%20%26%20Digital-orange)
+![Ziel](https://img.shields.io/badge/Ziel-Familienfrieden-success)
+![Sicherheit](https://img.shields.io/badge/Modus-Sicherer%20Shutdown-red)
+
 
 ## 1. Das Konzept: Die technische Leitplanke fuer bewusste Medienzeiten
 Dieses Projekt ist aus einem realen Dilemma des digitalen Alltags entstanden. In einer Zeit, in der Bildschirmzeit, Mediensucht und die ständige Verfügbarkeit von Inhalten grosse Herausforderungen in der Erziehung darstellen, ist `stromweg` weit mehr als eine technische Spielerei.
