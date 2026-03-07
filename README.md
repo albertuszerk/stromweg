@@ -33,8 +33,8 @@ Hier findest du alle visuellen Details zum Nachbauen:
 
 | | | |
 | :---: | :---: | :---: |
-| ![Schaltplan](images/schaltplan.jpg) <br> **Schaltplan v1.0** | ![Kabel-Modding](images/kabel_mod.jpg) <br> **Detail Kabel-Mod** | ![ESP32 Case](images/esp32_case.jpg) <br> **Gehaeuse-Einbau** |
-| ![Installation](images/terminal_install.jpg) <br> **Terminal-Setup** | ![Tuya App](images/tuya_app.jpg) <br> **App-Szenen** | ![Final Project](images/fertiges_projekt.jpg) <br> **Im Einsatz** |
+| ![Schaltplan](images/shutdown1-schema-verdrahtung.jpg) <br> **Schaltplan v1.0** | ![Das nur noch 5 Minuten Dilemma](images/shutdown7.jpg) <br> **Das nur noch 5 Minuten Dilemma** | ![Die Konsequenz-Schaltung](images/shutdown8.jpg) <br> **Die Konsequenz-Schaltung** |
+| ![Streit um Screentime](images/shutdown3.jpg) <br> **Streit um Screentime** | ![Endstation Safe: Platz für Schach, Karten und wahre Momente](images/shutdown5.jpg) <br> **Endstation Safe: Platz für Schach, Karten und wahre Momente** | ![Natur statt Bits](images/shutdown6.jpg) <br> **Natur statt Bits** |
 
 ---
 
