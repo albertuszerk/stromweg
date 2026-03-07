@@ -165,30 +165,36 @@ Um Datenverlust zu vermeiden, muss die Zeitverzögerung exakt eingehalten werden
 3.  **Aktion:** Schalte Kanal 1 (Hauptstrom 4A) auf **AUS**.
 
 
-## 8. Die Geschichte vom Haus "Zorin" und dem kleinen Waechter
+## 8. Die Geschichte vom Haus "Zorin" und dem kleinen Waechter 🏠
 
 Stell dir vor, dein Laptop ist ein riesiges, gemütliches **Haus namens Zorin**. In diesem Haus arbeiten hunderte kleine Helfer (die Programme). Sie räumen auf, schreiben Briefe oder spielen Musik.
 
-### Der Waechter am Gartenzaun (Serial.println)
+> [!TIP]
+> ### 🛡️ Der Waechter am Gartenzaun (Serial.println)
+> Draussen am Gartenzaun sitzt unser kleiner Freund, der **ESP32**. Er ist der Waechter. Er hat eine ganz wichtige Aufgabe: Er passt auf, ob du den grossen **"Feierabend-Knopf"** (den Tuya-Switch) drückst.
+> 
+> Sobald du drückst, greift der Waechter zu seinem Funkgerät und ruft ganz laut in das USB-Kabel hinein: `SHUTDOWN_NOW!`. Das USB-Kabel ist wie eine **geheime Rohrpost**, die direkt in das Haus Zorin führt.
 
-Draussen am Gartenzaun sitzt unser kleiner Freund, der **ESP32**. Er ist der Waechter. Er hat eine ganz wichtige Aufgabe: Er passt auf, ob du den grossen "Feierabend-Knopf" (den Tuya-Switch) drückst.
+> [!IMPORTANT]
+> ### 👂 Der Lauscher an der Wand (Das Python-Skript)
+> Drinnen im Haus Zorin sitzt ein spezieller Helfer direkt am Ende der Rohrpost-Leitung. Das ist unser **Python-Skript**. Er macht den ganzen Tag nichts anderes, als sein Ohr an das Rohr zu halten. Sobald er das Wort `SHUTDOWN_NOW` hört, weiss er: "Oha, jetzt wird es ernst!"
 
-Sobald du drückst, greift der Waechter zu seinem Funkgerät und ruft ganz laut in das USB-Kabel hinein: **"SHUTDOWN_NOW!"**. Das USB-Kabel ist wie eine **geheime Rohrpost**, die direkt in das Haus Zorin führt.
+> [!CAUTION]
+> ### 📢 Der Befehl an die Putztrupps (os.system)
+> Jetzt kommt der Moment mit `os.system("sudo shutdown -h now")`. Das ist für den Python-Helfer so, als würde er eine **goldene Glocke** im Haus läuten und über die Lautsprecher rufen: 
+> **"Achtung an alle Helfer! Sofort alles stehen und liegen lassen, Fenster schliessen, Licht ausmachen und ab ins Bett!"**
 
-### Der Lauscher an der Wand (Das Python-Skript)
+---
 
-Drinnen im Haus Zorin sitzt ein spezieller Helfer direkt am Ende der Rohrpost-Leitung. Das ist unser **Python-Skript**. Er macht den ganzen Tag nichts anderes, als sein Ohr an das Rohr zu halten. Sobald er das Wort **"SHUTDOWN_NOW"** hört, weiss er: "Oha, jetzt wird es ernst!"
+### 🔍 Die magischen Worte im Detail
 
-### Der Befehl an die Putztrupps (os.system)
+| Begriff | Bedeutung | Der "Chef-Faktor" |
+| :--- | :--- | :--- |
+| `sudo` | Der magische Ausweis | "Ich darf das, ich bin der Chef!" |
+| `shutdown -h` | Die Abschliess-Aktion | "Haus abschliessen!" |
+| `now` | Der Zeitplan | "Nicht erst morgen, sondern SOFORT!" |
 
-Jetzt kommt der Moment mit `os.system("sudo shutdown -h now")`. Das ist für den Python-Helfer so, als würde er eine **goldene Glocke** im Haus läuten und über die Lautsprecher rufen: **"Achtung an alle Helfer! Sofort alles stehen und liegen lassen, Fenster schliessen, Licht ausmachen und ab ins Bett!"**
-
-- **sudo:** Das ist wie ein magischer Ausweis. Er sagt: "Ich darf das, ich bin der Chef!"
-    
-- **shutdown -h:** Das ist der Befehl: "Haus abschliessen!"
-    
-- **now:** Das bedeutet: "Nicht erst morgen, sondern SOFORT!"
-    
+---
 
 ### Zusammenfassung
 
@@ -200,10 +206,10 @@ Jetzt kommt der Moment mit `os.system("sudo shutdown -h now")`. Das ist für den
 | sudo shutdown | "Alle Fenster zu, Lichter aus, wir gehen schlafen!" |
 
 ---
-**Lizenz:** Dieses Werk ist lizenziert unter einer [Creative Commons Namensnennung 4.0 International Lizenz (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.de).
-Erstellt von Albertus Zerk in Zusammenarbeit mit Gemini. *Version 1.0 (Final) | Maerz 2026.*
+**Lizenz:** CC BY-NC-SA 4.0
 
-<a href="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png">
-  <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="50">
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="75">
 </a>
 
+Erstellt von Albertus Zerk in Zusammenarbeit mit Gemini. *Version 1.0 (Final) | Maerz 2026.*
