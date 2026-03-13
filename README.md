@@ -141,29 +141,71 @@ except Exception as e:
 
 ```
 
-## 6. Setup
+## 6\. Setup
 
-📥 Installation (Zorin OS)
+### 📥 Installation (Zorin OS)
+
+In diesem Abschnitt richten wir den "Lauscher" (das Python-Skript) und den dazugehörigen System-Dienst ein, damit dein Laptop auf das Signal des Wächters reagieren kann.
+
+#### 1\. Verzeichnis und Abhängigkeiten vorbereiten
+
+Zuerst erstellen wir den notwendigen Ordner in deinem Benutzerverzeichnis und installieren die Bibliothek für die serielle Kommunikation.
+
+Bash
 
 ```
-# Vorbereitung
-mkdir -p ~/.local/bin
-sudo apt update && sudo apt install python3-serial -y
+mkdir -p ~/.local/bin && sudo apt update && sudo apt install python3-serial -y
+# Deinstallation: sudo apt remove python3-serial -y
+```
 
-# Einrichtung (Pfade anpassen!)
-cp listener.py ~/.local/bin/
-sudo cp listener.service /etc/systemd/system/
+#### 2\. Das Lauscher-Skript (listener.py) erstellen
+
+Wir legen die Datei direkt an deinem Zielort an.
+
+Bash
+
+```
+nano ~/.local/bin/listener.py
+# Deinstallation: rm ~/.local/bin/listener.py
+```
+
+> **Vorgehensweise:** Kopiere den vollständigen Code der `listener.py` in das schwarze Fenster. Drücke zum Speichern **Strg+O** und **Enter**. Mit **Strg+X** kehrst du zum Terminal zurück.
+
+#### 3\. Den Hintergrund-Dienst (listener.service) einrichten
+
+Damit das Skript mit Root-Rechten im Hintergrund läuft, erstellen wir eine Dienst-Datei im Systemordner.
+
+Bash
+
+```
+sudo nano /etc/systemd/system/listener.service
+# Deinstallation: sudo rm /etc/systemd/system/listener.service
+```
+
+> **Vorgehensweise:** Kopiere den Inhalt der `listener.service` in den Editor. **WICHTIG:** Ersetze in der Zeile `ExecStart` den Platzhalter `DEIN_BENUTZERNAME` durch deinen echten Namen (z.B. `albertuszerk`). Speichere mit **Strg+O**, bestätige mit **Enter** und beende mit **Strg+X**.
+
+#### 4\. Dienst aktivieren und starten
+
+Damit das System den neuen Dienst erkennt und sofort ausführt, nutzen wir folgende Befehlskette:
+
+Bash
+
+```
 sudo systemctl daemon-reload && sudo systemctl enable listener.service && sudo systemctl start listener.service
-
+# Deinstallation: sudo systemctl stop listener.service && sudo systemctl disable listener.service && sudo systemctl daemon-reload
 ```
 
-🗑️ Deinstallation (vollständig entfernen)
+#### 5\. Status prüfen
+
+Um sicherzugehen, dass alles korrekt funktioniert, kannst du den Status abfragen:
+
+Bash
+
 ```
-sudo systemctl stop listener.service && sudo systemctl disable listener.service
-sudo rm /etc/systemd/system/listener.service
-rm ~/.local/bin/listener.py
-sudo systemctl daemon-reload
+sudo systemctl status listener.service
 ```
+
+Wenn dort in grüner Schrift **"active (running)"** steht, lauscht dein Haus Zorin nun offiziell auf den Wächter am Gartenzaun.
 
 ## 7. Tuya Szenen-Logik
 
